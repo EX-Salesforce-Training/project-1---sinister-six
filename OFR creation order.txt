@@ -1,0 +1,121 @@
+Object - Feild - Relationship creation set
+Create everything in the order in which it is shown
+feilds of objects are represented by an indent
+make sure all capitalization and spelling matches shown below
+
+	Transactions-
+		Transaction ID (Record, autogen, trans-{0000})
+		Amount Paid (currency)
+		Date Paid (Date)
+		Notes (text area)
+		Expiration year (YYYY, Number)
+		CVV (Number)
+
+	Payment info
+		Payment info ID (record autogen, payment-{0000})
+		Credit card type (picklist)
+		Credit card number (number)
+		Expiration month (MM, Number)
+		Expiration year (YYYY, number)
+		CVV (Number)
+
+	Character
+		Character Name (record, text)
+		Race (Picklist)
+		Class (Picklist)
+		Strength (Number)
+		Constitution (Number)
+		Dexterity (Number)
+		Wisdom (Number)
+		Intelligence (Number)
+		Charisma (Number)
+		General Notes (Text Area)
+		Dead? (Checkbox)
+
+	Player
+		Name (Record, text)
+		Username (text)
+		Email (Email, required)
+
+	Party
+		Party Name (Record, text)
+
+	Campaign
+		Campaign ID (Record, Autogen, campaign-{0000})
+		Campaign Name (Text, required)
+		Status(picklist)
+		General Notes(Text area)
+		Next Session (Date/time)
+		Location (Text)
+		URL (Text)
+
+	Realm
+		Realm Name (Record, text)
+
+	Region
+		Region Name (Record, text)
+		City (text)
+		State - Text
+
+	Queue
+		Queue ID (Record, autogen, queue-{0000})
+		Closed? (Checkbox)
+
+	Dungeoneer
+		Employee ID (Record, Autogen, dungeoneer-{0000})
+		First Name (Text, Required)
+		Last Name (Text)
+		Username (Text, required)
+		Role (Picklist)
+		Programming languages (Text area)
+
+	Session
+		Session ID (Record, Autogen, session-{0000})
+		Session Date/Time (Date/time)
+		Session Number (Number)
+
+Relationships:
+	Transactions
+		Payment Method Used - Payment object
+		Used By - Player object
+
+	Payment Info
+		Used By - Player Object
+
+	Character
+		Used By - Player Object
+		In Party - Party Object
+
+
+	Player
+		Realm - Realm Object
+		Queue - Queue Object
+		Region - Region Object
+
+	Party
+		Realm - Realm Object
+		Region - Region Object
+
+	Campaign
+		Party - Party Object
+		Region - Region Object
+		Realm - Realm Object
+		Dungeon Master - Dungeoneer Object
+
+	Realm
+		DK in Charge - Dungeoneer Object
+
+	Region
+		DL in Charge - Dungeoneer Object
+		In Realm - Realm Object
+
+	Queue
+		Realm - Realm Object
+		Region - Region Object
+
+	Dungeoneer
+		Region - Region Object
+		Realm - Realm Object
+
+	Session
+		Campaign - Campaign Object
