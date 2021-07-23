@@ -13,7 +13,7 @@ make sure all capitalization and spelling matches shown below
 
 	Payment info
 		Payment info ID (record autogen, payment-{0000})
-		Credit card type (picklist)
+		Credit card type (picklist) [Visa, Mastercard, Amex, Discover]
 		Credit card number (number)
 		Expiration month (MM, Number)
 		Expiration year (YYYY, number)
@@ -21,8 +21,8 @@ make sure all capitalization and spelling matches shown below
 
 	Character
 		Character Name (record, text)
-		Race (Picklist)
-		Class (Picklist)
+		Race (Picklist) [Dragonborn, Dwarf, Elf, Gnome, Half-Elf, Halfling, Half-Orc, Human, Tiefling]
+		Class (Picklist) [Barbarian, Bard, Cleric, Druid, Fighter, Monk, Paladin, Ranger, Rogue, Sorcerer, Warlock, Wizard]
 		Strength (Number)
 		Constitution (Number)
 		Dexterity (Number)
@@ -43,7 +43,7 @@ make sure all capitalization and spelling matches shown below
 	Campaign
 		Campaign ID (Record, Autogen, campaign-{0000})
 		Campaign Name (Text, required)
-		Status(picklist)
+		Status(picklist) [New, In Progress, Idle, Canceled, Finished]
 		General Notes(Text area)
 		Next Session (Date/time)
 		Location (Text)
@@ -51,11 +51,12 @@ make sure all capitalization and spelling matches shown below
 
 	Realm
 		Realm Name (Record, text)
+		Includes States (multi-select picklist) resource: states.txt
 
 	Region
 		Region Name (Record, text)
 		City (text)
-		State - Text
+		State (picklist) resource: states.txt
 
 	Queue
 		Queue ID (Record, autogen, queue-{0000})
@@ -66,8 +67,8 @@ make sure all capitalization and spelling matches shown below
 		First Name (Text, Required)
 		Last Name (Text)
 		Username (Text, required)
-		Role (Picklist)
-		Programming languages (Text area)
+		Role (Picklist) [Dungeon Master, Dungeon Lord / Lady, Dungeon King / Queen, Guildmaster, Goldsmith, Tradesman, Black Mage, White Mage, High Mage, Emperor]
+		Programming languages (Multi-select picklist) [Python, C, C++, C#, Java, Javascript, Apex, HTML, Ruby]
 
 	Session
 		Session ID (Record, Autogen, session-{0000})
@@ -118,4 +119,7 @@ Relationships:
 		Realm - Realm Object
 
 	Session
-		Campaign - Campaign Object
+		Campaign - Campaign Object (Master-Detail)
+
+
+
