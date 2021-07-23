@@ -1,0 +1,31 @@
+// This is a trigger on the Queue object. It references two classes: queueCloserHandler, and queueNonCloseHandler.
+
+trigger queueCloserTrigger on Queue__c (before insert, before update, before delete, after insert, after update, after delete, after undelete) {
+    switch on trigger.operationtype {
+        when BEFORE_INSERT {
+            
+        }
+        when BEFORE_UPDATE {
+            // This trigger is in charge of preventing users from closing an empty queue
+            queueNonCloseHandler.deleteInstead(trigger.new);
+            
+            // This trigger is in charge of taking players off queues when they've closed.
+            queueCloserHandler.closingQ(trigger.new);
+        }
+        when BEFORE_DELETE {
+            
+        }
+        when AFTER_INSERT {
+            
+        }
+        when AFTER_UPDATE {
+            
+        }
+        when AFTER_DELETE {
+            
+        }
+        when AFTER_UNDELETE {
+            
+        }
+    }
+}
