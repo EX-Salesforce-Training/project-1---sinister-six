@@ -1,0 +1,14 @@
+// This is handled by charTrigger.
+// It removes a character from a party once that character has died.
+
+public class charDeathHandler {
+    
+    public static void seeYa(List<Character__c> chars) {
+        for (Character__c chara : chars) {
+            if (chara.dead__c == true) {
+                chara.party__c = null;
+            }
+        }
+    }
+    
+}
