@@ -1,0 +1,16 @@
+// This is a class referenced by queueCloserTrigger. It prevents users from closing an empty queue.
+// A queue should only be closed when there are players in it. This is because there is a flow in place that automatically creates a new party and campaign when a queue closes.
+// To prevent this from happening needlessly, we must have a trigger that prevents the close of empty queues. If someone wishes to get rid of a queue without any people,
+// it is recommended that they delete it instead.
+ 
+public class queueNonCloseHandler {
+    
+    public static void deleteInstead(List<Queue__c> Qs) {
+        List<Player__c> playersInQ = [SELECT queue__c FROM player__c WHERE queue__c IN : Qs];
+        for (Queue__c q : Qs) {
+            if (q.closed__c == true && playersInQ.size() == 0) {
+                q.addError('This queue is empty, so it cannot be closed. If you would like to get rid of it, try deleting it instead.');
+            }
+        }
+    }
+}
