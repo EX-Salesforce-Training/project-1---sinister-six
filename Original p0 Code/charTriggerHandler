@@ -1,0 +1,21 @@
+// This contains a method referenced in charTrigger.
+// This prevents users from deleting a character that's in an active campaign.
+// Since Party is now a child object of Campaign, rather than a Parent object, it might need some adjustments. I'll take a closer look at it later.
+  
+public class charTriggerHandler {
+	
+    public static void weStillNeedYou(List<Character__c> chars) {
+        List<String> parties = new List<String>();
+        for (Character__c chara : chars) {
+            parties.add(chara.party__c);
+        }
+        for (Party__c pty : [SELECT id, campaign__r.status__c FROM party__c WHERE id IN : parties]) {
+            for (Character__c chr : chars) {
+                if (chr.dead__c == false && pty.Campaign__r.status__c == 'In Progress') {
+                    chr.addError('You cannot delete a character in an active campaign.');
+                }
+            }
+        }
+    }
+    
+}
