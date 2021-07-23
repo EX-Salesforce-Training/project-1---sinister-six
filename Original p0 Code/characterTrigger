@@ -1,0 +1,32 @@
+// This is a basic trigger for the Character object. It references two other classes: charDeathHandler, and charTriggerHandler.
+
+trigger characterTrigger on Character__c (before insert, before update, before delete, after insert, after update, after delete, after undelete) {
+    switch on trigger.operationtype {
+        when before_insert {
+            
+        }
+        when before_update {
+            
+            // This will remove a dead character from a party
+            charDeathHandler.seeYa(trigger.new);
+        }
+        when before_delete {
+            
+            // This will prevent someone from deleting a LIVE character in an active campaign
+            charTriggerHandler.weStillNeedYou(trigger.old);
+            
+        }
+        when after_insert {
+            
+        }
+        when after_update {
+            
+        }
+        when after_delete {
+            
+        }
+        when after_undelete {
+            
+        }
+    }
+}
