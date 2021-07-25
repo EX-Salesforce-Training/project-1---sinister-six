@@ -1,0 +1,39 @@
+public class customControl {
+    
+    public List<Contact> conList {get;set;}
+    Integer off{get;set;}
+    Integer numOfRows {get;set;}
+    
+    public customControl() {
+        off = 0;
+        numOfRows = 3;
+        recalculateList();
+    }
+    
+    public void recalculateList() {
+        conList = [SELECT firstName, lastName FROM Contact LIMIT : numOfRows OFFSET : off];
+    }
+    
+    public void nextPage() {
+        off = off+3;
+        recalculateList();
+    }
+    
+    public void previousPage() {
+        if (off-3>=0) {
+        	off = off-3;
+        }
+        recalculateList();
+    }
+    
+    public void smaller() {
+        numOfRows--;
+        recalculateList();
+    }
+    
+    public void bigger() {
+        numOfRows++;
+        recalculateList();
+    }
+    
+}
