@@ -1,0 +1,9 @@
+public class customControl {
+    
+    public List<Account> accoList{get;set;}
+    
+    public customControl() {
+        accoList = [SELECT name, id, (SELECT name, accountID from contacts) FROM account];
+    }
+    
+}
