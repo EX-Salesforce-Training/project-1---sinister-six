@@ -1,0 +1,14 @@
+public class customControl {
+    
+    public List<Contact> conList{get;set;}
+    public List<Contact> listOWraps{get;set;}
+    
+    public customControl() {
+        ListOWraps = new List<Contact>();
+        for (Contact c : [select name, account.name, department, phone, title from Contact]) {
+            listOWraps.add(c);
+        }
+    }
+    
+    
+}
