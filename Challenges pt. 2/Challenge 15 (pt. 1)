@@ -1,0 +1,14 @@
+<apex:page controller="customControl">
+	<apex:form>
+    	<apex:pageBlock>
+        	<apex:pageBlockTable value="{!conList}" var="con">
+                <apex:column value="{!con.firstname}" />
+                <apex:column value="{!con.lastname}" />
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+        <apex:commandButton action="{!previousPage}" value="Previous page"/>
+        <apex:commandButton action="{!nextPage}" value="Next page"/>
+       	<apex:commandButton action="{!smaller}" value="Reduce table size"/>
+        <apex:commandButton action="{!bigger}" value="Increase table size"/>
+    </apex:form>
+</apex:page>
