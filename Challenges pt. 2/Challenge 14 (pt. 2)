@@ -1,0 +1,15 @@
+public class customControl {
+    
+    public List<Contact> conList{get;set;}
+    public String hateMessage{get;set;}
+    
+    public customControl() {
+        conList = [SELECT name, phone, email, id FROM Contact];
+        hateMessage = 'Actually, I do not hate anyone anymore.';
+    }
+    
+    public void changeToCA() {
+        conList = [SELECT name, phone, email, mailingState, id FROM Contact WHERE mailingState = 'CA'];
+    }
+    
+}
