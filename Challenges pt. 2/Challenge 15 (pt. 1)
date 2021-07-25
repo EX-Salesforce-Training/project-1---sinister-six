@@ -1,0 +1,11 @@
+<apex:page controller="customControl">
+	<apex:form>
+    	<apex:pageBlock>
+        	<apex:pageBlockTable value="{!accoList}" var="acco">
+                <apex:column value="{!acco.name}" />
+                <apex:column value="{!acco.id}" />
+                <apex:column value="Related Contact: {!acco.Contacts}" />
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>
