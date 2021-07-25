@@ -1,0 +1,11 @@
+<apex:page standardController="Contact" recordSetVar="cons">
+	<apex:form>
+    	<apex:pageBlock>
+        	<apex:pageBlockTable value="{!cons}" var="con">
+                <apex:column value="{!con.name}" />
+                <apex:column value="{!con.phone}" />
+                <apex:column value="{!con.email}" />
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>
