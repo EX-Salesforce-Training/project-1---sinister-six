@@ -1,0 +1,13 @@
+public class customControl {
+    
+    transient public List<Contact> listOWraps{get;set;}
+    
+    public customControl() {
+        ListOWraps = new List<Contact>();
+        for (Contact c : [select name, account.name, department, phone, title from Contact]) {
+            listOWraps.add(c);
+        }
+    }
+    
+    
+}
