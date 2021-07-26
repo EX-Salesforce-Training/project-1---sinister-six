@@ -29,17 +29,6 @@
                 <apex:commandButton action="{!changeGumber}" value="Click to change the gumber!" rerender="RefreshThis" style="color:#FFFFFF; background:#59DBFA" />
             </apex:actionRegion>
         </apex:pageBlock>
-        <apex:pageBlock>
-    		<apex:pageBlockSection>
-            	<apex:pageBlockTable value="{!accoList}" var="acco">
-                	<apex:column value="{!acco.name}" />
-                	<apex:column value="{!acco.site}" />
-                	<apex:column value="{!acco.accountNumber}" />
-            	</apex:pageBlockTable>
-        	</apex:pageBlockSection>
-            <apex:commandButton value="Previous Page" action="{!prevPage}" />
-            <apex:commandButton value="Next Page" action="{!nextPage}" />
-    	</apex:pageBlock>
     </apex:form>
     <span class="slds-icon_container slds-icon_container_circle slds-icon-action-description" title="Description of icon when needed">
   		<svg class="slds-icon" aria-hidden="true">
