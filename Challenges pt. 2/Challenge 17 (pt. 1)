@@ -1,0 +1,25 @@
+<apex:page controller="customControl">
+    <apex:slds />
+	<apex:form >
+    	<apex:pageBlock >
+        	<apex:pageBlockTable value="{!ListOWraps}" var="con">
+                <apex:column value="{!con.name} of {!con.account.name}" />
+                <apex:column headerValue="Title">
+                    <apex:outputField value="{!con.title}">
+                    	<apex:inlineEditSupport />
+                    </apex:outputField>
+                </apex:column>
+                <apex:column headerValue="Department">
+                	<apex:outputField value="{!con.department}">
+                    	<apex:inlineEditSupport />	
+                	</apex:outputField>
+            	</apex:column>
+                <apex:column headerValue="Phone number">
+                	<apex:outputField value="{!con.phone}">
+                     	<apex:inlineEditSupport />
+                    </apex:outputField>
+                </apex:column>
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>
