@@ -1,0 +1,32 @@
+public class customControl {
+    
+    public List<Contact> listOWraps{get;set;}
+    public List<Account> accoList{get;set;}
+    public Double rando = Math.random() * 100;
+    public integer gumber = null;
+    public integer off = 0;
+    public integer lim = 10;
+    
+    
+    public customControl() {
+        ListOWraps = new List<Contact>();
+        for (Contact c : [select name, account.name, department, phone, title from Contact]) {
+            listOWraps.add(c);
+        }
+        accoList = [SELECT name, accountnumber, site FROM account LIMIT : lim OFFSET : off];
+    }
+    
+    public Integer getGumber() {
+        if (gumber == null || gumber == 0) {
+            gumber = 1;
+        } else if (gumber == 1) {
+            gumber = 0;
+        }
+        return gumber;
+    }
+    
+    public void changeGumber() {
+        gumber = (Math.random()*100).intValue();
+    }
+    
+}
