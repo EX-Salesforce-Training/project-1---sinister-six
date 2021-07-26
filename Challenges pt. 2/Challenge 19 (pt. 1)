@@ -1,0 +1,56 @@
+<apex:page controller="customControl">
+    <apex:slds />
+	<apex:form >
+    	<apex:pageBlock >
+        	<apex:pageBlockTable value="{!ListOWraps}" var="con">
+                <p class="{!con.name} of {!con.account.name}" />
+                <apex:column headerValue="Title">
+                    <apex:outputField value="{!con.title}">
+                    	<apex:inlineEditSupport />
+                    </apex:outputField>
+                </apex:column>
+                <apex:column headerValue="Department">
+                	<apex:outputField value="{!con.department}">
+                    	<apex:inlineEditSupport />	
+                	</apex:outputField>
+            	</apex:column>
+                <apex:column headerValue="Phone number">
+                	<apex:outputField value="{!con.phone}">
+                     	<apex:inlineEditSupport />
+                    </apex:outputField>
+                </apex:column>
+            </apex:pageBlockTable>
+            <apex:actionRegion>
+            	<apex:outputPanel id="RefreshThis">
+                	<apex:outputText>
+                    	The gumber is {!gumber}
+                    </apex:outputText>>
+                </apex:outputPanel>
+                <apex:commandButton action="{!changeGumber}" value="Click to change the gumber!" rerender="RefreshThis" style="color:#FFFFFF; background:#59DBFA" />
+            </apex:actionRegion>
+        </apex:pageBlock>
+        <apex:pageBlock>
+    		<apex:pageBlockSection>
+            	<apex:pageBlockTable value="{!accoList}" var="acco">
+                	<apex:column value="{!acco.name}" />
+                	<apex:column value="{!acco.site}" />
+                	<apex:column value="{!acco.accountNumber}" />
+            	</apex:pageBlockTable>
+        	</apex:pageBlockSection>
+            <apex:commandButton value="Previous Page" action="{!prevPage}" />
+            <apex:commandButton value="Next Page" action="{!nextPage}" />
+    	</apex:pageBlock>
+    </apex:form>
+    <span class="slds-icon_container slds-icon_container_circle slds-icon-action-description" title="Description of icon when needed">
+  		<svg class="slds-icon" aria-hidden="true">
+    		<use href="/assets/icons/action-sprite/svg/symbols.svg#description"></use>
+  		</svg>
+  		<span class="slds-assistive-text">Description of icon when needed</span>
+	</span>
+    <span class="slds-icon_container slds-icon_container_circle slds-icon-action-description" title="Description of icon when needed">
+  		<svg class="slds-icon" aria-hidden="true">
+    		<use href="/assets/icons/action-sprite/svg/symbols.svg#share"></use>
+  		</svg>
+  		<span class="slds-assistive-text">Description of icon when needed</span>
+	</span>
+</apex:page>
