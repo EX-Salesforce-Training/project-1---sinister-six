@@ -1,0 +1,9 @@
+<apex:page >
+    <apex:pageBlock >
+        <apex:pageBlockSection >
+        	<apex:outputText >
+            	"What's up, all y'all?"
+            </apex:outputText>
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+</apex:page>
