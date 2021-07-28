@@ -3,10 +3,10 @@
     <fullName>CVV__c</fullName>
     <externalId>false</externalId>
     <label>CVV</label>
-    <precision>18</precision>
+    <length>3</length>
+    <maskChar>asterisk</maskChar>
+    <maskType>all</maskType>
     <required>false</required>
-    <scale>0</scale>
     <trackTrending>false</trackTrending>
-    <type>Number</type>
-    <unique>false</unique>
+    <type>EncryptedText</type>
 </CustomField>

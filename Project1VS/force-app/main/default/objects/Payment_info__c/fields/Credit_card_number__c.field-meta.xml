@@ -3,10 +3,10 @@
     <fullName>Credit_card_number__c</fullName>
     <externalId>false</externalId>
     <label>Credit card number</label>
-    <precision>18</precision>
+    <length>16</length>
+    <maskChar>asterisk</maskChar>
+    <maskType>creditCard</maskType>
     <required>false</required>
-    <scale>0</scale>
     <trackTrending>false</trackTrending>
-    <type>Number</type>
-    <unique>false</unique>
+    <type>EncryptedText</type>
 </CustomField>
