@@ -31,6 +31,12 @@
                 <default>false</default>
                 <label>Discover</label>
             </value>
+            <value>
+                <fullName>Amex</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Amex</label>
+            </value>
         </valueSetDefinition>
     </valueSet>
 </CustomField>
