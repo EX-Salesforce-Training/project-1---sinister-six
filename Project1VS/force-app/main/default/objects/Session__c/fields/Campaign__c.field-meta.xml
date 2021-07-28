@@ -3,7 +3,11 @@
     <fullName>Campaign__c</fullName>
     <externalId>false</externalId>
     <label>Campaign</label>
+<<<<<<< HEAD
     <referenceTo>Campaign__c</referenceTo>
+=======
+    <referenceTo>Campaign</referenceTo>
+>>>>>>> cb23a693afa561433646ddfc9b25f2dee43e84d1
     <relationshipLabel>Sessions</relationshipLabel>
     <relationshipName>Sessions</relationshipName>
     <relationshipOrder>0</relationshipOrder>

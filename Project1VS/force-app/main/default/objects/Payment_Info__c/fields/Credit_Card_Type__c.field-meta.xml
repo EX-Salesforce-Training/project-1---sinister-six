@@ -12,25 +12,42 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
+<<<<<<< HEAD
                 <fullName>Discover</fullName>
                 <default>false</default>
                 <label>Discover</label>
             </value>
             <value>
+=======
+>>>>>>> cb23a693afa561433646ddfc9b25f2dee43e84d1
                 <fullName>Visa</fullName>
                 <default>false</default>
                 <label>Visa</label>
             </value>
             <value>
+<<<<<<< HEAD
                 <fullName>Master</fullName>
                 <default>false</default>
                 <label>Master</label>
+=======
+                <fullName>Mastercard</fullName>
+                <default>false</default>
+                <label>Mastercard</label>
+>>>>>>> cb23a693afa561433646ddfc9b25f2dee43e84d1
             </value>
             <value>
                 <fullName>Amex</fullName>
                 <default>false</default>
                 <label>Amex</label>
             </value>
+<<<<<<< HEAD
+=======
+            <value>
+                <fullName>Discover</fullName>
+                <default>false</default>
+                <label>Discover</label>
+            </value>
+>>>>>>> cb23a693afa561433646ddfc9b25f2dee43e84d1
         </valueSetDefinition>
     </valueSet>
 </CustomField>

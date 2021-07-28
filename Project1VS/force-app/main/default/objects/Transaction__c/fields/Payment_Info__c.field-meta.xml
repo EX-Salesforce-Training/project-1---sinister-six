@@ -5,8 +5,13 @@
     <externalId>false</externalId>
     <label>Payment Info</label>
     <referenceTo>Payment_Info__c</referenceTo>
+<<<<<<< HEAD
     <relationshipLabel>Transaction</relationshipLabel>
     <relationshipName>Transaction</relationshipName>
+=======
+    <relationshipLabel>Transactions</relationshipLabel>
+    <relationshipName>Transactions</relationshipName>
+>>>>>>> cb23a693afa561433646ddfc9b25f2dee43e84d1
     <required>false</required>
     <trackHistory>false</trackHistory>
     <trackTrending>false</trackTrending>

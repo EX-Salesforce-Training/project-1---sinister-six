@@ -143,6 +143,10 @@
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
+<<<<<<< HEAD
+=======
+    <description>individual games within the campaign</description>
+>>>>>>> cb23a693afa561433646ddfc9b25f2dee43e84d1
     <enableActivities>true</enableActivities>
     <enableBulkApi>true</enableBulkApi>
     <enableFeeds>false</enableFeeds>
@@ -156,7 +160,11 @@
     <label>Session</label>
     <nameField>
         <displayFormat>session-{0000}</displayFormat>
+<<<<<<< HEAD
         <label>Session ID</label>
+=======
+        <label>Session Name</label>
+>>>>>>> cb23a693afa561433646ddfc9b25f2dee43e84d1
         <trackHistory>false</trackHistory>
         <type>AutoNumber</type>
     </nameField>

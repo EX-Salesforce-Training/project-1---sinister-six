@@ -1,23 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Dungeon_Master__c</fullName>
+    <fullName>Dungeon_Lord_Lady__c</fullName>
     <deleteConstraint>SetNull</deleteConstraint>
     <externalId>false</externalId>
-    <label>Dungeon Master</label>
-<<<<<<< HEAD
-=======
+    <label>Dungeon Lord/Lady</label>
     <lookupFilter>
         <active>true</active>
         <filterItems>
             <field>User.UserRole.Name</field>
             <operation>equals</operation>
-            <value>Dungeon_Master</value>
+            <value>Dungeon_Lord_Lady</value>
         </filterItems>
         <isOptional>false</isOptional>
     </lookupFilter>
->>>>>>> cb23a693afa561433646ddfc9b25f2dee43e84d1
     <referenceTo>User</referenceTo>
-    <relationshipName>Campaigns</relationshipName>
+    <relationshipName>Regions</relationshipName>
     <required>false</required>
     <trackHistory>false</trackHistory>
     <trackTrending>false</trackTrending>

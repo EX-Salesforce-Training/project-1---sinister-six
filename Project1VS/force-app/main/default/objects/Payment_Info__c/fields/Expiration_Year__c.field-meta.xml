@@ -4,7 +4,11 @@
     <externalId>false</externalId>
     <label>Expiration Year</label>
     <precision>4</precision>
+<<<<<<< HEAD
     <required>false</required>
+=======
+    <required>true</required>
+>>>>>>> cb23a693afa561433646ddfc9b25f2dee43e84d1
     <scale>0</scale>
     <trackHistory>false</trackHistory>
     <trackTrending>false</trackTrending>

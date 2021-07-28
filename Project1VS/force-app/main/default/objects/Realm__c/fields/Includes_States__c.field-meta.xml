@@ -1,21 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>State__c</fullName>
+    <fullName>Includes_States__c</fullName>
     <externalId>false</externalId>
-    <label>State</label>
-<<<<<<< HEAD
-    <required>false</required>
-=======
+    <label>Includes States</label>
     <required>true</required>
->>>>>>> cb23a693afa561433646ddfc9b25f2dee43e84d1
     <trackHistory>false</trackHistory>
     <trackTrending>false</trackTrending>
-    <type>Picklist</type>
+    <type>MultiselectPicklist</type>
     <valueSet>
-<<<<<<< HEAD
-=======
         <restricted>true</restricted>
->>>>>>> cb23a693afa561433646ddfc9b25f2dee43e84d1
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
@@ -270,4 +263,5 @@
             </value>
         </valueSetDefinition>
     </valueSet>
+    <visibleLines>4</visibleLines>
 </CustomField>

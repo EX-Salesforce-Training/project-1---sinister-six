@@ -3,7 +3,11 @@
     <fullName>Location__c</fullName>
     <externalId>false</externalId>
     <label>Location</label>
+<<<<<<< HEAD
     <length>30</length>
+=======
+    <length>40</length>
+>>>>>>> cb23a693afa561433646ddfc9b25f2dee43e84d1
     <required>false</required>
     <trackHistory>false</trackHistory>
     <trackTrending>false</trackTrending>

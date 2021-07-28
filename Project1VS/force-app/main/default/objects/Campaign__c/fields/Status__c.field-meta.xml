@@ -12,6 +12,7 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
+<<<<<<< HEAD
                 <fullName>Open</fullName>
                 <default>false</default>
                 <label>Open</label>
@@ -25,6 +26,31 @@
                 <fullName>Closed</fullName>
                 <default>false</default>
                 <label>Closed</label>
+=======
+                <fullName>New</fullName>
+                <default>true</default>
+                <label>New</label>
+            </value>
+            <value>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+                <label>In Progress</label>
+            </value>
+            <value>
+                <fullName>Idle</fullName>
+                <default>false</default>
+                <label>Idle</label>
+            </value>
+            <value>
+                <fullName>Canceled</fullName>
+                <default>false</default>
+                <label>Canceled</label>
+            </value>
+            <value>
+                <fullName>Finished</fullName>
+                <default>false</default>
+                <label>Finished</label>
+>>>>>>> cb23a693afa561433646ddfc9b25f2dee43e84d1
             </value>
         </valueSetDefinition>
     </valueSet>

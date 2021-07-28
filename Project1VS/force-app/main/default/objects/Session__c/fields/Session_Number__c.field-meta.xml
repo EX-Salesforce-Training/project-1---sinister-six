@@ -9,5 +9,9 @@
     <trackHistory>false</trackHistory>
     <trackTrending>false</trackTrending>
     <type>Number</type>
+<<<<<<< HEAD
     <unique>false</unique>
+=======
+    <unique>true</unique>
+>>>>>>> cb23a693afa561433646ddfc9b25f2dee43e84d1
 </CustomField>

@@ -6,6 +6,7 @@
     <picklistValues>
         <picklist>Status__c</picklist>
         <values>
+<<<<<<< HEAD
             <fullName>Closed</fullName>
             <default>false</default>
         </values>
@@ -17,5 +18,26 @@
             <fullName>Reserved</fullName>
             <default>false</default>
         </values>
+=======
+            <fullName>Canceled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finished</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Idle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>true</default>
+        </values>
+>>>>>>> cb23a693afa561433646ddfc9b25f2dee43e84d1
     </picklistValues>
 </RecordType>

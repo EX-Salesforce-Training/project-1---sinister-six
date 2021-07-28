@@ -7,7 +7,11 @@
     <types>
         <members>*</members>
         <name>ApexClass</name>
+<<<<<<< HEAD
     </types>
+=======
+    </types>    
+>>>>>>> cb23a693afa561433646ddfc9b25f2dee43e84d1
     <types>
         <members>*</members>
         <name>ApexComponent</name>

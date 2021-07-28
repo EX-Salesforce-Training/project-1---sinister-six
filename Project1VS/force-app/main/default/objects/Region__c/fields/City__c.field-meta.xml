@@ -3,8 +3,13 @@
     <fullName>City__c</fullName>
     <externalId>false</externalId>
     <label>City</label>
+<<<<<<< HEAD
     <length>30</length>
     <required>false</required>
+=======
+    <length>40</length>
+    <required>true</required>
+>>>>>>> cb23a693afa561433646ddfc9b25f2dee43e84d1
     <trackHistory>false</trackHistory>
     <trackTrending>false</trackTrending>
     <type>Text</type>
