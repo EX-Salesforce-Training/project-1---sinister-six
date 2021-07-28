@@ -3,14 +3,14 @@
     <fullName>Class__c</fullName>
     <externalId>false</externalId>
     <label>Class</label>
-    <required>false</required>
+    <required>true</required>
     <trackHistory>false</trackHistory>
     <trackTrending>false</trackTrending>
     <type>Picklist</type>
     <valueSet>
         <restricted>true</restricted>
         <valueSetDefinition>
-            <sorted>false</sorted>
+            <sorted>true</sorted>
             <value>
                 <fullName>Barbarian</fullName>
                 <default>false</default>

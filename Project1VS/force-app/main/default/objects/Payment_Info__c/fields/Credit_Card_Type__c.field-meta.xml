@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Status__c</fullName>
+    <fullName>Credit_Card_Type__c</fullName>
     <externalId>false</externalId>
-    <label>Status</label>
-    <required>false</required>
+    <label>Credit card type</label>
+    <required>true</required>
     <trackHistory>false</trackHistory>
     <trackTrending>false</trackTrending>
     <type>Picklist</type>
@@ -12,29 +12,24 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
-                <fullName>New</fullName>
+                <fullName>American Express</fullName>
                 <default>false</default>
-                <label>New</label>
+                <label>AmEx</label>
             </value>
             <value>
-                <fullName>In Progress</fullName>
+                <fullName>MasterCard</fullName>
                 <default>false</default>
-                <label>In Progress</label>
+                <label>MasterCard</label>
             </value>
             <value>
-                <fullName>Idle</fullName>
+                <fullName>Visa</fullName>
                 <default>false</default>
-                <label>Idle</label>
+                <label>Visa</label>
             </value>
             <value>
-                <fullName>Canceled</fullName>
+                <fullName>Discover</fullName>
                 <default>false</default>
-                <label>Canceled</label>
-            </value>
-            <value>
-                <fullName>Finished</fullName>
-                <default>false</default>
-                <label>Finished</label>
+                <label>Discover</label>
             </value>
         </valueSetDefinition>
     </valueSet>
