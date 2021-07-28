@@ -2,7 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Expiration_Year_YYYY__c</fullName>
     <externalId>false</externalId>
-    <label>Expiration Year (YYYY)</label>
+    <label>Expiration year (YYYY)</label>
     <precision>4</precision>
     <required>true</required>
     <scale>0</scale>
