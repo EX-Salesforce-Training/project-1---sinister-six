@@ -7,7 +7,7 @@ selected, card number must be in ####-####-####-####
 format.</description>
     <errorConditionFormula>NOT(ISPICKVAL(Credit_Card_Type__c ,&quot;American Express&quot;))
 &amp;&amp;
-NOT(ISPICKVAL(Credit_Card_Type__c ,&quot;&quot;)) &amp;&amp;
+NOT(ISPICKVAL(Credit_Card_Type__c ,&quot;&quot;)) &amp;
 NOT(REGEX( Credit_Card_Number__c,
 &quot;[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}&quot;) )</errorConditionFormula>
     <errorDisplayField>Credit_Card_Number__c</errorDisplayField>
