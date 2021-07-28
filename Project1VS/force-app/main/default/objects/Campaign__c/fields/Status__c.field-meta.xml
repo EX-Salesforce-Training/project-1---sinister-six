@@ -13,7 +13,7 @@
             <sorted>false</sorted>
             <value>
                 <fullName>New</fullName>
-                <default>true</default>
+                <default>false</default>
                 <label>New</label>
             </value>
             <value>
@@ -35,6 +35,24 @@
                 <fullName>Finished</fullName>
                 <default>false</default>
                 <label>Finished</label>
+            </value>
+            <value>
+                <fullName>Closed</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Closed</label>
+            </value>
+            <value>
+                <fullName>Open</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Open</label>
+            </value>
+            <value>
+                <fullName>Reserved</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Reserved</label>
             </value>
         </valueSetDefinition>
     </valueSet>

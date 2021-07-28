@@ -143,21 +143,20 @@
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
-    <description>Records of transactions related to payment for services rendered</description>
     <enableActivities>true</enableActivities>
     <enableBulkApi>true</enableBulkApi>
     <enableFeeds>false</enableFeeds>
     <enableHistory>true</enableHistory>
     <enableLicensing>false</enableLicensing>
     <enableReports>true</enableReports>
-    <enableSearch>true</enableSearch>
+    <enableSearch>false</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>Private</externalSharingModel>
     <label>Transaction</label>
     <nameField>
-        <displayFormat>trans-{0000}</displayFormat>
-        <label>Transaction Name</label>
+        <displayFormat>TRANS-{0000}</displayFormat>
+        <label>Transaction ID</label>
         <trackHistory>false</trackHistory>
         <type>AutoNumber</type>
     </nameField>
