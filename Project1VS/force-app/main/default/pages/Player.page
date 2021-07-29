@@ -1,0 +1,22 @@
+<apex:page standardController="Player__c" extensions="PlayerController">
+    <apex:form >
+    	<apex:pageBlock >
+            <apex:outputLabel >Name: </apex:outputLabel>
+        	<apex:inputField value="{!Player__c.Name}"/>
+            
+            <br/><br/>
+            <apex:outputLabel >Username: </apex:outputLabel>
+        	<apex:inputField value="{!Player__c.Username__c}"/>
+            
+            <br/><br/>
+            <apex:outputLabel >Email: </apex:outputLabel>
+        	<apex:inputField value="{!Player__c.Email__c}"/>
+            
+            <br/><br/>
+            <apex:outputLabel >Characters: </apex:outputLabel>
+            <apex:pageBlockTable value="{!chars}" var="char">
+            
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>
