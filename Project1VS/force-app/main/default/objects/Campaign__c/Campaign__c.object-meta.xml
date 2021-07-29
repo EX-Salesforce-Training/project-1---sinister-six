@@ -143,6 +143,7 @@
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
+    <description>The story in progress (campaign)</description>
     <enableActivities>true</enableActivities>
     <enableBulkApi>true</enableBulkApi>
     <enableFeeds>false</enableFeeds>
@@ -155,8 +156,8 @@
     <externalSharingModel>Private</externalSharingModel>
     <label>Campaign</label>
     <nameField>
-        <displayFormat>CAMPAIGN-{0000}</displayFormat>
-        <label>Campaign ID</label>
+        <displayFormat>campaign-{0000}</displayFormat>
+        <label>Campaign Name</label>
         <trackHistory>false</trackHistory>
         <type>AutoNumber</type>
     </nameField>
