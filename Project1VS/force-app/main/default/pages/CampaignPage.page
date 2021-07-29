@@ -11,15 +11,12 @@ extensions="CampaignExtension"
         <apex:pageBlock title="Campaign Information">
            <div class="slds-scope">
             <div class="slds-grid">
-            
-                <div class="slds-col slds-size_1-of-12" style="background-color:#D3D3D3">
-                    <apex:outputField title="Campaign Name" value="{!Campaign__c.Name}" />
-                </div>
+
               
                 <div class="slds-col slds-size_2-of-12" style="background-color:tan">
                    
                      <h1>
-                         <p> Campaign name: <apex:inputField value="{!Campaign__c.Name__c}" /></p>
+                         <p> Campaign name: <apex:inputField value="{!Campaign__c.Name}" /></p>
                     </h1>
                      
                 </div>
