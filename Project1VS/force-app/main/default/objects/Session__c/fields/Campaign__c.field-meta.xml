@@ -3,7 +3,7 @@
     <fullName>Campaign__c</fullName>
     <externalId>false</externalId>
     <label>Campaign</label>
-    <referenceTo>Campaign__c</referenceTo>
+    <referenceTo>Campaign</referenceTo>
     <relationshipLabel>Sessions</relationshipLabel>
     <relationshipName>Sessions</relationshipName>
     <relationshipOrder>0</relationshipOrder>
