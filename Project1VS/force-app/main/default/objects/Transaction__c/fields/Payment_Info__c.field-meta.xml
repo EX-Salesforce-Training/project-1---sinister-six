@@ -5,8 +5,8 @@
     <externalId>false</externalId>
     <label>Payment Info</label>
     <referenceTo>Payment_Info__c</referenceTo>
-    <relationshipLabel>Transaction</relationshipLabel>
-    <relationshipName>Transaction</relationshipName>
+    <relationshipLabel>Transactions</relationshipLabel>
+    <relationshipName>Transactions</relationshipName>
     <required>false</required>
     <trackHistory>false</trackHistory>
     <trackTrending>false</trackTrending>
