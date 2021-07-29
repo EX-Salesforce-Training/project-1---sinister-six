@@ -4,15 +4,6 @@
     <deleteConstraint>SetNull</deleteConstraint>
     <externalId>false</externalId>
     <label>Used By</label>
-    <lookupFilter>
-        <active>true</active>
-        <filterItems>
-            <field>User.UserRole.Name</field>
-            <operation>equals</operation>
-            <value>D&amp;DU - Player</value>
-        </filterItems>
-        <isOptional>false</isOptional>
-    </lookupFilter>
     <referenceTo>User</referenceTo>
     <relationshipName>Characters</relationshipName>
     <required>false</required>
