@@ -3,7 +3,7 @@ public class partyPageController {
     public List<Party__c> partyList{get;set;}
     public List<Character__c> charList{get;set;}
     public List<Player__c> playas{get;set;}
-    public Campaign__c camp{get;set;}
+    public DnDCampaign__c camp{get;set;}
     public Party__c selectedParty{get;set;}
     
     public partyPageController() {

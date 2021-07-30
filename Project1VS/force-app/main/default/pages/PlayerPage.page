@@ -1,0 +1,6 @@
+<apex:page >
+    <apex:slds />
+    <h1>
+        HELLO WORLD!
+    </h1>
+</apex:page>

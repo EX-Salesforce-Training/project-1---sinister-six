@@ -6,7 +6,7 @@ next session if planned: date/time
 
 extensions="CampaignExtension"
 -->
-<apex:page standardController="Campaign__c" standardStylesheets="true">
+<apex:page standardController="DnDCampaign__c" standardStylesheets="true">
     <apex:form >
         <apex:pageBlock title="Campaign Information">
            <div class="slds-scope">
@@ -16,25 +16,25 @@ extensions="CampaignExtension"
                 <div class="slds-col slds-size_2-of-12" style="background-color:tan">
                    
                      <h1>
-                         <p> Campaign name: <apex:inputField value="{!Campaign__c.Name}" /></p>
+                         <p> Campaign name: <apex:inputField value="{!DnDCampaign__c.Name}" /></p>
                     </h1>
                      
                 </div>
        
                 <div class="slds-col" style="background-color:#D3D3D3">
                     <h1>
-                         <p> Next Session: <apex:inputField value="{!Campaign__c.Next_Session__c}" /></p>
+                         <p> Next Session: <apex:inputField value="{!DnDCampaign__c.Next_Session__c}" /></p>
                     </h1>
                     
                 </div>
            
                 <div class="slds-col" style="background-color:tan">
                     <h1>
-                         <p> Party: <apex:inputField value="{!Campaign__c.Party__c}" /></p>
+                         <p> Party: <apex:inputField value="{!DnDCampaign__c.Party__c}" /></p>
                     </h1>
                 	
                     <h1>
-                         <p> Dungeon Master: <apex:inputField value="{!Campaign__c.Dungeon_Master__c}" /></p>
+                         <p> Dungeon Master: <apex:inputField value="{!DnDCampaign__c.Dungeon_Master__c}" /></p>
                     </h1>
             		
                 </div>
