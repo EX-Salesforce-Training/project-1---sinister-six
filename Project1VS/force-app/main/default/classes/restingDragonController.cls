@@ -21,11 +21,11 @@ public class restingDragonController {
     public static List<charClass> makeCallout(){
         String apiAddress = 'https://www.dnd5eapi.co/api/';
             
-		String subLevel = 'classes/';
+        List<String> categories = new List<String>{'classes/', 'ability-scores/', 'skills/', 'proficiencies/', 'languages/', 'alignment/', 'backgrounds/', 'races/', 'traits/', 'equipment-categories/', 'equipment/', 'magic-items/', 'weapon-properties/', 'spells/', ''};
         
         Http http = new Http();
         httpRequest request = new HttpRequest();
-        request.setEndpoint(apiAddress + subLevel);
+        request.setEndpoint(apiAddress + categories[0]);
         request.setMethod('GET');
         request.setHeader('Content-Type', 'application/json');
         request.setHeader('Accept', 'application/json');
