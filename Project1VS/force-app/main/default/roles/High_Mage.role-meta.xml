@@ -5,5 +5,5 @@
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>High Mage</name>
     <opportunityAccessLevel>Edit</opportunityAccessLevel>
-    <parentRole>Executive</parentRole>
+    <parentRole>Emperor</parentRole>
 </Role>

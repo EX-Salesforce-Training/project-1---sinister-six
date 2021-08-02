@@ -1,4 +1,5 @@
-<apex:page controller="partyPageController">
+<apex:page controller="partyPageController" extensions="ptyPgExtender">
+    <slds />
     <apex:pageBlock >
         <apex:pageBlockSection >
         	<apex:outputText >
@@ -6,41 +7,36 @@
             </apex:outputText>
         </apex:pageBlockSection>
         <apex:pageBlockSection >
-        	<apex:pageBlockTable value="{!partyList}" var="pty">
-                <apex:column headerValue="Name" value="{!pty.name}" />
-                <apex:column value="{!pty.Region__c}" headerValue="Party Region" />
-                <apex:column value="{!pty.Realm__c}" headerValue="Party Realm" />
-            </apex:pageBlockTable>
+            <apex:form >
+        		<apex:pageBlockTable value="{!partyList}" var="pty">
+                	<apex:column headerValue="Name">
+                		<apex:commandLink action="{!selectParty}" value="{!pty.name}" rerender="refresh-this">
+                            <apex:param name="parameter" value="{!pty.id}" assignTo="{!selectedParty}" />
+                    	</apex:commandLink>
+                	</apex:column>
+            	</apex:pageBlockTable>
+            </apex:form>
         </apex:pageBlockSection>
     </apex:pageBlock>
-    <apex:actionRegion >
-    	<apex:pageBlock >
-        	<apex:pageBlockSection >
-        		<h1>
-            		Party Name
-            	</h1>
-        	</apex:pageBlockSection>
-    		<apex:pageBlockSection >
-            	<apex:pageBlockTable value="{!partyList}" var="pty">
-                	<apex:column value="{!pty.name}" headerValue="List of Characters" />
-                	<apex:column value="{!pty.Region__c}" headerValue="" />
-                	<apex:column value="{!pty.Realm__c}" headerValue="" />
-            	</apex:pageBlockTable>
-        	</apex:pageBlockSection>
-        	<apex:pageBlockSection >
-        		<apex:pageBlockTable value="{!partyList}" var="pty">
-                	<apex:column value="{!pty.name}" headerValue="List of Players" />
-                	<apex:column value="{!pty.Region__c}" headerValue="" />
-                	<apex:column value="{!pty.Realm__c}" headerValue="" />
-            	</apex:pageBlockTable>
-            </apex:pageBlockSection>
-            <apex:pageBlockSection >
-        		<apex:pageBlockTable value="{!partyList}" var="pty">
-                	<apex:column value="{!pty.name}" headerValue="Campaign Info (including DM)" />
-                	<apex:column value="{!pty.Region__c}" headerValue="" />
-                	<apex:column value="{!pty.Realm__c}" headerValue="" />
-            	</apex:pageBlockTable>
-            </apex:pageBlockSection>
+    	<apex:pageBlock id="refresh-this">
+                <apex:actionRegion >
+        		<apex:pageBlockSection >
+        			<apex:outputText >
+                    	{!partyName}
+                    </apex:outputText>
+        		</apex:pageBlockSection>
+        		<apex:pageBlockSection >
+        			<apex:pageBlockTable value="{!playas}" var="ply">
+                		<apex:column value="{!ply.Used_By__c}" headerValue="Players" />
+                        <apex:column value="{!ply.name}" headerValue="Characters" />
+            		</apex:pageBlockTable>
+            	</apex:pageBlockSection>
+            	<apex:pageBlockSection >
+        			<apex:pageBlockTable value="{!cpaign}" var="cmp">
+                        <apex:column value="{!cmp.Campaign_Name__c}" headerValue="Campaign" />
+                        <apex:column value="{!cmp.Dungeon_Master__c}" headerValue="Dungeon Master" />
+            		</apex:pageBlockTable>
+            	</apex:pageBlockSection>
+            </apex:actionRegion>
     	</apex:pageBlock>
-    </apex:actionRegion>
 </apex:page>

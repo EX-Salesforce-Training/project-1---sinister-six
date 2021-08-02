@@ -4,6 +4,15 @@
     <deleteConstraint>SetNull</deleteConstraint>
     <externalId>false</externalId>
     <label>Region</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Region__c.In_Realm__c</field>
+            <operation>equals</operation>
+            <valueField>$Source.Realm__c</valueField>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
     <referenceTo>Region__c</referenceTo>
     <relationshipLabel>DnDCampaigns</relationshipLabel>
     <relationshipName>DnDCampaigns</relationshipName>

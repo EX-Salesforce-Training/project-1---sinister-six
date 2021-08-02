@@ -155,8 +155,8 @@
     <externalSharingModel>Private</externalSharingModel>
     <label>DnDCampaign</label>
     <nameField>
-        <displayFormat>dndcampaign-{0000}</displayFormat>
-        <label>DnDCampaign Name</label>
+        <displayFormat>Campaign-{00000}</displayFormat>
+        <label>DnDCampaign ID</label>
         <trackHistory>false</trackHistory>
         <type>AutoNumber</type>
     </nameField>

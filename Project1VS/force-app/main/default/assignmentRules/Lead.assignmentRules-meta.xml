@@ -4,7 +4,7 @@
         <fullName>Standard</fullName>
         <active>true</active>
         <ruleEntry>
-            <assignedTo>laughteralan@curious-panda-d4zhd1.com</assignedTo>
+            <assignedTo>icepaynalu@wise-panda-qcctz2.com</assignedTo>
             <assignedToType>User</assignedToType>
             <criteriaItems>
                 <field>Lead.Country</field>
@@ -13,7 +13,7 @@
             </criteriaItems>
         </ruleEntry>
         <ruleEntry>
-            <assignedTo>laughteralan@curious-panda-d4zhd1.com</assignedTo>
+            <assignedTo>icepaynalu@wise-panda-qcctz2.com</assignedTo>
             <assignedToType>User</assignedToType>
             <criteriaItems>
                 <field>Lead.Country</field>

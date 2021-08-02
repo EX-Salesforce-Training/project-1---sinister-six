@@ -95,10 +95,6 @@
 	</types>
 	<types>
 		<members>*</members>
-		<name>SharingRules</name>
-	</types>
-	<types>
-		<members>*</members>
 		<name>SharingSet</name>
 	</types>
 	<types>

@@ -5,5 +5,5 @@
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>Tradesman</name>
     <opportunityAccessLevel>Edit</opportunityAccessLevel>
-    <parentRole>Executive</parentRole>
+    <parentRole>Emperor</parentRole>
 </Role>

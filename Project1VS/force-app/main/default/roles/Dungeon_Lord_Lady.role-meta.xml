@@ -3,7 +3,7 @@
     <caseAccessLevel>Edit</caseAccessLevel>
     <contactAccessLevel>Edit</contactAccessLevel>
     <mayForecastManagerShare>false</mayForecastManagerShare>
-    <name>Dungeon Lord/Lady</name>
+    <name>Dungeon Lord / Lady</name>
     <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>Dungeon_King_Queen</parentRole>
 </Role>
